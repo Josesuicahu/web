@@ -1,0 +1,108 @@
+h1 {
+  color: #333;
+  font-size: 36px;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 11, 11, 0.5); /* Color de fondo y opacidad */
+  backdrop-filter: blur(5px); /* Ajusta la intensidad del desenfoque */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de tamaño igual */
+  grid-template-rows: 1fr; /* Una fila */
+  gap: 20px; /* Espacio entre las columnas */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
+  height: 500px; /* Altura del 100% del viewport */
+}
+
+/* Estilo para las columnas */
+.grid-item {
+  border-radius: 40px;
+  height: 600px;
+  background-color: rgba(
+    209,
+    209,
+    209,
+    0.5
+  ); /* Color de fondo de las columnas */
+  padding: 20px; /* Espaciado interno */
+  /* Centrar el texto */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+#ventas-list {
+  margin-top: 10px;
+}
+
+#ventas-list li {
+  background-color: rgb(207, 207, 207); /* Fondo blanco */
+  border: 1px solid #ccc; /* Bordes con color gris */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 5px 10px 5px 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  list-style: none; /* Elimina el punto al inicio de cada elemento */
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+#ventas-list li:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
+}
+/* Estilo para sombrear los resultados de búsqueda */
+.resultados li {
+    background-color: #f2f2f2; /* Cambia el color de fondo según tu preferencia */
+    padding: 5px; /* Añade espaciado para hacer que los resultados sean más legibles */
+    margin: 5px 0; /* Añade margen superior e inferior para separar los resultados */
+    border-radius: 5px; /* Añade esquinas redondeadas para un aspecto más agradable */
+}
+
+.boleta {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para los encabezados y los elementos fuertes */
+.boleta h1,
+h2,
+p {
+  margin: 10px 0;
+}
+
+.boleta h1 {
+  font-size: 24px;
+}
+
+.boleta h2 {
+  font-size: 18px;
+}
+
+/* Estilos para la lista de detalles */
+.boleta ul {
+  list-style: none;
+  padding: 0;
+}
+
+.boleta li {
+  margin: 5px 0;
+}
+
+/* Estilos para el total */
+.boleta p strong {
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.eliminar-btn {
+    display: none;
+  }
+  
+tbody#historial-tbody > tr > td:last-child{
+    width: 200px;
+}
+
+tbody#historial-tbody > tr > td:last-child > button {
+    margin: 5px 0px;
+    width: 80%;
+}
+
+
+
